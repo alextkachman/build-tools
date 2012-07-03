@@ -4,13 +4,13 @@ These tools add build support for various languages to vert.x.
 
 The following is added to the classpath:
 
-    src/main/<language>
-    src/test/<language>
+    src/main/&lt;language&gt;
+    src/test/&lt;language&gt;
 
 The following is added to the resource path:
 
-    src/main/<language>_scripts
-    src/test/<language>_scripts
+    src/main/&lt;language&gt;_scripts
+    src/test/&lt;language&gt;_scripts
 
 In most cases, the latter is recommended.
 
@@ -20,15 +20,15 @@ The build tools support the following languages:
 
 ### JRuby
 
-Ruby is supported by JRuby version 1.6.7, the <language> variable is `ruby`
+Ruby is supported by JRuby version 1.6.7, the &lt;language&gt; variable is `ruby`
 
 ### Jython
 
-The Python language is supported via Jython 2.5.2, the <language> variable is `python`
+The Python language is supported via Jython 2.5.2, the &lt;language&gt; variable is `python`
 
 ### Rhino
 
-Javascript is support via Rhino 1.7R4, the <language> variable is `javascript`
+Javascript is support via Rhino 1.7R4, the &lt;language&gt; variable is `javascript`
 
 ## Usage
 
