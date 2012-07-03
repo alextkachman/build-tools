@@ -4,13 +4,13 @@ These tools add build support for various languages to vert.x.
 
 The following is added to the classpath:
 
-    src/main/&lt;language&gt;
-    src/test/&lt;language&gt;
+    src/main/<language>
+    src/test/<language>
 
 The following is added to the resource path:
 
-    src/main/&lt;language&gt;_scripts
-    src/test/&lt;language&gt;_scripts
+    src/main/<language>_scripts
+    src/test/<language>_scripts
 
 In most cases, the latter is recommended.
 
