@@ -1,0 +1,11 @@
+.idea
+.classpath
+.gradle
+.project
+.settings
+bin
+build
+*.iml
+*.ipr
+*.iws
+*.class

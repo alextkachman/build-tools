@@ -1,0 +1,42 @@
+// This is a single project
+
+apply plugin: 'groovy'
+apply from: 'gradle/maven.gradle'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+	compile gradleApi()
+	compile("org.jruby:jruby:$jrubyVersion") {
+		transitive false
+	}
+	compile("org.python:jython-standalone:$jythonVersion") {
+		transitive false
+	}
+	compile("org.mozilla:rhino:$rhinoVersion") {
+		transitive false
+	}
+	groovy "org.codehaus.groovy:groovy-all:$groovyVersion"
+}
+
+sourceCompatibility = '1.7'
+targetCompatibility = '1.7'
+
+task wrapper(type: Wrapper, description: "Create a Gradle self-download wrapper") {
+    group = 'Project Setup'
+    gradleVersion = "$gradleVersion"
+}
+
+task upload(dependsOn: ['clean', 'build', 'uploadArchives']) {
+	group = 'vert.x'
+	description = 'Build and upload to Maven Central'
+}
+
+task dist(dependsOn: ['clean', 'build']) {
+	group = 'vert.x'
+	description = 'Build package'
+}
+
+
