@@ -12,7 +12,10 @@ The following is added to the resource path:
     src/main/<language>_scripts
     src/test/<language>_scripts
 
-In most cases, the latter is recommended.
+In most cases, the latter is recommended as the appropriate location for script files.
+The precompile support for the alternative location is presently incomplete and in
+may not offer any benefit.
+
 
 ## Language Support
 
