@@ -46,7 +46,7 @@ Add the following to the 'project/build.gradle':
 
 Add the following to the 'project/gradle.properties'
 
-    vertxBuildTools=0.1-SNAPSHOT
+    vertxBuildTools=0.1-SNAPSHOT  # (or current version)
 
 Each project can now add one or a combination of the following plugins, to trigger the plugin & task additions:
 
