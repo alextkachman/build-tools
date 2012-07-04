@@ -56,3 +56,16 @@ Each project can now add one or a combination of the following plugins, to trigg
     apply plugin: 'vertx-jruby'
     apply plugin: 'vertx-jython'
     apply plugin: 'vertx-rhino'
+
+
+The plugins configure the source and resource paths and a non-transitive configuration namespace each.
+This means that it's possible to declare the vertx components as dependencies, but they won't be exported.
+
+    dependencies {
+        compile "somegroup:somemodule:version"
+        vertxJRuby "org.vert-x:vertx-lang-jruby:$vertxVersion"
+        vertxJython "org.vert-x:vertx-lang-jython:$vertxVersion"
+        vertxRhino "org.vert-x:vertx-lang-rhino:$vertxVersion"
+    }
+
+
